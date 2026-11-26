@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Dasar js</title>
+</head>
+<body>
+    <div class="input-group mb-3">
+        <input type="text" id="inputNama" onkeyup="tamuKehormatan()" class="form-control" placeholder="Masukkan nama anda" aria-label="Masukkan nama anda" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="btnSimpan" onclick="tamuKehormatan()">Simpan</button>
+    </div>
+    <h1>Selamat datang, <span id="namaLengkap"></span> </h1>
+            <script type="text/javascript">
+                 console.log("Hai, ini pesan rahasia");
+                // document.write('Selamat Datang di Javascript');
+                var waktu = "Selamat siang";
+                console.log(waktu);
+                var namaLengkap = "Roghibah khanifah";
+                console.log(namaLengkap)
+                let harga = 15000;
+                stok = 12;
+                jumlah=harga*stok;
+                console.log(jumlah);
+                document.getElementById("namaLengkap").innerHTML=namaLengkap
+
+                function tamuKehormatan(){
+                var namaTamu = document.getElementById('inputNama').value
+                document.getElementById("namaLengkap").innerHTML="Tamu Kehormatan Radenayu Kang"+namaTamu;
+            }
+            </script>
+</body>
+</html>
